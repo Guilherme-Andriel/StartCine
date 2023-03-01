@@ -1,0 +1,90 @@
+<!doctype html>
+	
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sessão Brasileira</title>
+	</head>
+	<body>
+
+		<table border="10" width="50%"> <!--"table" para abrir uma tabela, "border" para indicar o tamanho da borda e "width" para decidir o tamanho da tabela em si. -->
+
+
+		<tr> <!--"tr" para abrir uma única linha. -->
+
+
+			<th>	
+				<a href="index.html">ABERTURA</a>	
+         	</th> <!--"th" para abrir o local de dados que esta única linha possui. Neste caso, o "th" só é usado para o titulo da tabela. -->
+
+			<th>
+				<a href="catalogo.html">CATÁLOGO</a>
+			</th>  <!--"os dados são colocados de meneira horizontal nesta única linha. -->
+
+			<th>
+				<a href="sobrenos.html">SOBRE NÓS</a>
+			</th>
+
+			<th>
+				<a href="suporte.html">SUPORTE</a>
+			</th>
+
+        	<th>
+        		<a href="tercontato.html">TER CONTATO</a>
+        	</th>
+
+
+
+		</tr><!--fechando a linha. -->
+
+	
+			</table><br>
+
+		<h2>JÁ POSSUI CONTA:</h2>
+		<form>
+			Login:<br>
+			<input type="text" name="login"><br><!--O text serve para dizer o tipo de strings, name tem função de recuperar os dados-->
+			Senha:<br>
+			<input type="password" name="senha"><br> <!--O password serve para deixar a senha secreta, name tem função de recuperar os dados-->
+			<input type="submit" value="Entrar"> <!--O sunmit serve para criar um botão, value tem função de nomear o botão-->
+
+		</form>
+
+		<br>
+
+		<h2>CADASTRE-SE</h2>
+		<form>
+			Login:<br>
+			<input type="text" name="login"><br><!--O text serve para dizer o tipo de strings, name tem função de recuperar os dados-->
+			Sexo:<br>
+			<input type="radio" name="sexo" value="M">Masculino<br> <!--radio é um formato circular para preencher e value diferencia os dados para identificar eles quando forem recuperar-los-->
+			<input type="radio" name="sexo" value="F">Feminino<br><br>
+			
+			Interesses<br>
+			<input type="checkbox" name="interesses">Terror<br> <!--Checkbox é um formato de checklist para preencher-->
+			<input type="checkbox" name="interesses">Romance<br> 
+			<input type="checkbox" name="interesses">Ação<br> 
+			<input type="checkbox" name="interesses">Animação<br> 
+			<input type="checkbox" name="interesses">Comédia<br><br> 
+
+			Estado<br>
+			<select name="estado"> <!--Select é uma maneira de mostrar várias opções para escolher-->
+				<option value="sp">SP</option>
+				<option value="mg">MG</option>
+				<option value="rj">RJ</option>
+				<option value="rs">RS</option>
+
+			</select><br><br>
+
+			Observações:<br>
+			<textarea></textarea><br> <!--Textarea, abre uma maior area de texto para escrever-->
+
+			<input type="submit" value="Cadastrar">
+
+		</form>
+		
+
+
+
+	</body>
+	</html>

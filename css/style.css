@@ -256,8 +256,23 @@ background-image: url(../imagens/img2.jpeg);
 
 	background-attachment: fixed; /*fundo fixo para dar aquele efeito massa e fazer com que o fundo apareça.*/
 
-	padding: 30px 20px;
+}
 
+.sessao-catalogo:hover .filme{
+	transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+	transform-style: preserve-3d;
+}
+
+
+.sessao-catalogo:hover .filme:hover{
+	transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+	transform-style: preserve-3d;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.85);
+}
+
+.filme{
+	cursor: pointer;
+	transform: all 0.4s;
 }
 
 .caixa-catalogo{
@@ -279,8 +294,42 @@ background-image: url(../imagens/img2.jpeg);
 /* CONTEÚDO - SOBRE NÓS
 --------------------------------------------------------------------------*/
 
-#sobre-nos{
+#sobre{
 	background: #1C1C1C;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: end;
+}
+
+.somos{
+	background: #1C1C1C;
+	width: 100vw;
+	height: 100vh;
+}
+
+#image-sobre{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#image-sobre{
+	background-color: #9bf0e1;
+	height: 100vh;
+	width: 50%;
+}
+
+.texto-sobre{
+	color: #fff;
+	padding: 40px;
+	margin-top: 40px;
+
+}
+
+.texto-sobre div{
+	font-size: 1.6em;
+	color: #9bf0e1;
 }
 
 
@@ -371,6 +420,14 @@ footer a:hover{
 
 #social_midia a:first-child{
 	margin-left: 0;
+}
+
+#social_midia a i bi{
+	color: #fff;
+}
+
+#social_midia a{
+	color: #fff;
 }
 
 #footer-list{

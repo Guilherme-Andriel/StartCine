@@ -37,6 +37,7 @@ img, span{
 	font-size: 1.4em;
 	color: #fff;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin-left: 5px;
 }
 
 
@@ -75,6 +76,11 @@ img, span{
 
 
 
+
+
+
+
+
 /* CONTEÚDO - ABERTURA
 --------------------------------------------------------------------------*/
 
@@ -87,7 +93,7 @@ img, span{
 .texto{
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
 
 }
@@ -104,8 +110,9 @@ img, span{
 	color: #fff;
 	background: #000;
 	text-align: justify;
-	padding: 30px 30px;
+	padding: 30px;
 	width: 100%;
+	height: 100%;
 	font-weight: 100;
 
 }
@@ -114,6 +121,7 @@ img, span{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	
 }
 
 .figura{
@@ -132,6 +140,13 @@ img, span{
 
 .libras{
 	padding-top: 70px;
+}
+
+.forma{
+	
+	display: flex;
+	justify-content: end;
+
 }
 
 
@@ -154,7 +169,7 @@ img, span{
 .caixa1{
 
 background: url(../imagens/ruido.png), /*Já possui opacidade na img*/
-	linear-gradient(50deg, #00BFFF, #B22222); /*Aparecerá um degradê*/
+	linear-gradient(50deg, #1f9781, #909cd1); /*Aparecerá um degradê*/
 
 
 
@@ -174,6 +189,20 @@ background-image: url(../imagens/img2.jpeg);
 
 .caixa4{
 	background: url(../imagens/img.webp);
+}
+
+#home .texto button:hover{
+	background-color: #146154;
+	color: #fff;
+}
+
+
+#home .texto button{
+	background-color: #e1fcf7;
+	border: none;
+	color: #000;
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.50);
+	
 }
 
 
@@ -343,10 +372,13 @@ background-image: url(../imagens/img2.jpeg);
 	height: 100%;
 }
 
-.texto-all h2{
+.texto-all .titulo h2{
 	display: inline;
 	margin-right: 25px;
+	
 }
+
+
 
 .texto-all h2 a{
 	
@@ -356,6 +388,8 @@ background-image: url(../imagens/img2.jpeg);
 
 }
 
+
+
 .texto-all h2 a:hover{
 	
 	
@@ -364,6 +398,24 @@ background-image: url(../imagens/img2.jpeg);
 	background-color: rgb(28, 28, 72);
 
 }
+.texto-all a.discord{
+	
+	margin-left: 10px;
+	color: white;
+	border: 1px solid rgb(91, 86, 86);
+
+}
+
+.texto-all a.discord:hover{
+	
+	
+	color: white;
+	border: 1px solid rgb(91, 86, 86);
+	background-color: rgb(28, 28, 72);
+
+}
+
+
 .texto-all h2 a i.bi{
 
 	color: white;
@@ -381,8 +433,9 @@ background-image: url(../imagens/img2.jpeg);
 	
 }
 	.faq{
-		margin-top: 100px;
+		margin-top: 120px;
 		padding: 0 10px 30px 10px;
+		margin-bottom: 100px;
 	}
 
 .faq h2{
@@ -391,7 +444,8 @@ background-image: url(../imagens/img2.jpeg);
 }
 
 #suporte .texto-all{
-	height: 100vh;
+	width: 100%;
+	height: 650px;
 }
 
 
@@ -412,26 +466,43 @@ background-image: url(../imagens/img2.jpeg);
 
 .contat{
 	position: relative;
-	right: 200px;
+	right: 5px;
+	margin-bottom: 50px;
 	
 }
 
-.tercontato{
-	height: 100vh;
+.contat a{
+	color: #fff;
+}
+
+.contat a:hover{
+	background-color: #263232;
 }
 
 .person{
-	max-width: 400px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	max-width: 300px;
+	margin-bottom: 80px;
+	padding: 20px;
 }
 
 .person img{
-	
+	border-radius: 50%;
+}
+
+#contato .texto-all{
+	height: 600px;
+	margin-bottom: 110px;
+}
+
+.form-group textarea{
+	resize: none;
 }
 
 
+#contato .texto-all input.btn:hover{
+	background-color: #9bf0e1;
+
+}
 
 
 
@@ -682,10 +753,7 @@ footer a:hover{
 		
 		}
 
-		.texto-all h2{
-			font-size: 1.5em;
-	
-	}
+		
 	.texto-all{
 		
 		margin-top: 0px;
@@ -706,8 +774,18 @@ footer a:hover{
 	}
 
 	.faq h2{
-		font-size: 1.5em;
+		font-size: 1.1em;
 		
+	}
+
+	.texto-all h2{
+		font-size: 1.5em;
+
+}
+
+
+	.texto-all h2 a{
+		display: none;
 	}
 }
 
@@ -798,9 +876,15 @@ font-size: 1.7em;
 }
 
 .faq h2{
-	font-size: 1.7em;
+	font-size: 1.5em;
 	
 }
+
+.texto-all h2 a{
+	display: none;
+
+}
+
 	
 
 }
@@ -888,9 +972,16 @@ font-size: 1.8em;
 }
 
 .faq h2{
-	font-size: 1.8em;
+	font-size: 1.3em;
 	
 }
+
+.texto-all a.discord{
+
+	display: none;
+
+}
+
 
 }
 
@@ -967,6 +1058,30 @@ font-size: 1.8em;
 	#enter{
 		margin: 20px 0;
 	}
+
+	.texto-all h2 a{
+	
+		display: none;
+			
+		
+		}
+
+		.faq h2{
+			font-size: 1.4em;
+			
+		}
+
+		
+.texto-all h2{
+	font-size: 2em;
+	
+	}
+	.texto-all h2 a{
+
+		display: none;
+	
+	}
+	
 	
 
 }
@@ -1023,7 +1138,26 @@ font-size: 1.8em;
 	.icon{
 		display: none;
 	}
+
 	
+.texto-all h2 a{
+	display: none;
+
+}
+
+.faq h2{
+	font-size: 1.6em;
+	
+}
+
+.texto-all h2{
+	font-size: 2.2em;
+}
+	
+.text-all, p{
+	font-size: 1.3em;
+}
+
 }
 
 /*Extra large devices (large desktops, 1200px e superior)*/
@@ -1076,6 +1210,23 @@ font-size: 1.8em;
 	.icon{
 		display: none;
 	}
+
+	.texto-all a.discord{
+	
+		display: none;		
+		
+		}
+
+		
+.faq h2{
+	font-size: 2.2em;
+	
+}
+
+
+.text-all, p{
+	font-size: 1.4em;
+}
 
 	
 

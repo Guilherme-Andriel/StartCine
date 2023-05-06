@@ -1,0 +1,53 @@
+/* CONTEÚDO - TER CONTATO
+--------------------------------------------------------------------------*/
+
+#contato{
+	background: #1C1C1C;
+	width: 100vw;
+	height: 100%;
+}
+
+#contato .texto-all .contat a{
+		display: inline;	
+		margin-right: 20px;
+}
+
+.contat{
+	position: relative;
+	right: 5px;
+	margin-bottom: 50px;
+	
+}
+
+.contat a{
+	color: #fff;
+}
+
+.contat a:hover{
+	background-color: #263232;
+}
+
+.person{
+	max-width: 300px;
+	margin-bottom: 80px;
+	padding: 20px;
+}
+
+.person img{
+	border-radius: 50%;
+}
+
+#contato .texto-all{
+	height: 600px;
+	margin-bottom: 110px;
+}
+
+.form-group textarea{
+	resize: none;
+}
+
+
+#contato .texto-all input.btn:hover{
+	background-color: #9bf0e1;
+
+}

@@ -1,0 +1,904 @@
+/********************* Style**********************************/
+@import "./catalogo.css";
+@import "./contato.css";
+@import "./sobre.css";
+@import "./suporte.css";
+body{
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+/* Tag - Texto
+-----------------------------------------------------------------------------*/
+
+h1{
+	letter-spacing: -0.05em; 
+	margin-bottom: 50px;
+	color: var(--cor2);
+}
+
+p{
+	text-align: justify;
+}
+
+/* Raiz
+-----------------------------------------------------------------------------*/
+:root {
+
+	/* Paleta de Cores */
+	--cor1: #000;
+	--cor2: #fff;
+	--cor3: #363232;
+	--cor4: #1C1C1C;
+	--cor5: #1C1C1C;
+	--cor6: #092d4a;
+	--cor7: #263232;
+	--cor8: #1d2f2b;
+	--cor9: #146154;
+	--cor10: #9bf0e1;
+
+	/* Tipografia */
+	--font:"Helvetica", Arial, sans-serif;
+	
+	
+}
+
+/* Barra de Navegação
+------------------------------------------------------------------------------*/
+
+.navbar-transparente{
+	padding: 5px 0px;
+	background: rgba(0, 0, 0, 0.6); 
+}
+
+header{
+	font-family: var(--font);
+}
+
+img, span{
+	font-size: 1.4em;
+	color: #fff;
+	margin-left: 5px;
+}
+
+
+
+.divisor{
+	width: 1px;
+	background: white;
+	margin: 12px 15px;
+
+}
+
+
+/* Menu - Links */
+
+#nav-principal{
+	margin-left: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link{ 
+	color: #fff;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover{ 
+	color: #9bf0e1;
+
+}
+
+
+/* Menu - Ícons */
+
+.navbar-light .navbar-toggler{
+	color: rgba(255, 255, 255, 5); /*branco e opacidade*/
+	border-color: rgba(255, 255, 255, 0.5);
+	margin-right: 5px;
+}
+
+
+
+/* CONTEÚDO - ABERTURA
+--------------------------------------------------------------------------*/
+#box-principal{
+
+	background:linear-gradient(50deg, #363232, #4590ce);
+	
+	}
+
+
+
+#home{
+	
+	height: 720px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-x: hidden;
+}
+
+.conteudo{
+	background:#273446;
+	color: #fff;
+	padding: 30px;
+	width: 100vw;
+	height: 100vh;
+	font-weight: 100;
+	display: flex;
+	align-items: center;
+
+}
+
+
+.texto-padrao{
+	display: flex;
+	height: 650px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+
+.imagem-1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:380px;
+	
+
+}
+
+.retrato{
+	background-size: cover;
+	border-radius: 10px;
+	transform: rotate(5deg)
+	skew(-5deg, -5deg);
+	box-shadow: 
+	5px 3px rgba(188, 194, 238, 0.75),
+	10px 6px rgba(67, 185, 212, 0.5),
+	15px 9px #25526b;
+	margin-left: 30%;
+
+}
+
+.float{
+	transform: translateY(0px);
+	animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+	0%{
+		transform: translateY(0px);
+	}
+	50%{
+		transform: translateY(-30px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+
+
+#home .texto-padrao button{
+	background-color: #1d2f2b;
+	border: none;
+	color: #000;
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.50);
+}
+
+
+#home .texto-padrao button:hover{
+	background-color: #146154;
+	color: #fff;
+}
+
+#home .texto-padrao button span{
+	line-height: 0.7;
+}
+
+.libras{
+	padding-top: 70px;
+}
+
+#beneficios img{
+	transform: rotate(-5deg)
+}
+
+
+/* 	RODAPÉ
+----------------------------------------------------------------------------------------*/
+footer{
+
+	font-family: var(--font);
+	background-color: #0b0b0b;
+	color: #fff;
+	padding-top: 20px;
+
+	
+}
+
+#footer-content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+#logo-footer{
+	margin: 0px 0px 10px 0px;
+
+}
+
+#social_midia{
+	margin-top: 30px;
+
+}
+
+#social_midia a{
+	margin-left: 15px;
+	
+	
+}
+
+footer a{
+
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	
+}
+
+footer a:hover{
+
+	text-decoration: none;
+	color: #9bf0e1;
+	
+}
+
+#social_midia a:first-child{
+	margin-left: 0;
+}
+
+#social_midia a i bi{
+	color: #fff;
+}
+
+#social_midia a{
+	color: #fff;
+}
+
+#footer-list{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	padding: 0;
+}
+
+#footer-list li{
+	text-align: none;
+	list-style: none;
+	padding: 10px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	margin: 10px;
+	
+	
+	
+}
+
+#enter{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+
+}
+
+#enter button{
+	width: 100px;
+}
+
+#enter button:hover{
+	background-color: #9bf0e1;
+}
+
+#footer-copyright{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+	padding-bottom: 20px;
+}
+
+#enter, h3{
+	font-size: 1.1em;
+}
+ #enter p{
+	font-size: 0.8em;
+}
+
+#enter button{
+	font-size: 0.8em;
+}
+
+#footer-copyright{
+	font-size: 0.8em;
+}
+
+
+
+/* RESPONSIVIDADE 
+-------------------------------------------------------------------------------------------------------*/
+
+@media(max-width: 492.98px){ 
+
+	#home{
+		align-items: flex-end;
+	} 
+
+	.texto{
+		margin-top: 20px;
+		margin-bottom: 60px;
+	}
+
+	.imagem-2{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		justify-self: flex-end;
+	}
+
+	.imagem-1{
+		display: none;
+	}
+
+	header, nav .container span{
+		font-size: 1em;
+	}
+
+	header, nav .container img{
+		width: 60px;
+		height: 55px;
+	}
+
+	#home, main.texto h1{
+		font-size: 3em;
+	
+
+	}
+
+	header, nav .container img{
+		margin-left: 10px;
+
+			}
+
+
+			.navbar-light .navbar-toggler{
+				margin-right: 15px;
+			}
+
+
+
+			.figura1{
+				right: 150px;
+			}
+
+			
+
+			.img-logo{
+				width: 50px;
+				height: 50px;
+			}
+
+			.offcanvas{
+				width: 60% !important;
+			
+			}
+
+			.filme{
+					width: 250px;
+			}
+
+			#footer-list{
+			
+				flex-direction: column;
+			
+			}
+
+			.image-sobre{
+				display: none;
+			}
+
+			.texto-all p{
+					font-size: 0.9em;
+			
+			}
+
+			.texto-all span{
+				font-size: 1.2em;
+		
+		}
+
+		
+	.texto-all{
+		
+		margin-top: 0px;
+	
+	}
+	.faq{
+		margin-top: 0px;
+		padding: 0 10px 30px 10px;
+		
+	}
+
+	.faq .accordion-body{
+		font-size: 0.9em;
+	}
+
+	.faq .accordion-button{
+		font-size: 0.7em;
+	}
+
+	.faq h2{
+		font-size: 1.1em;
+		
+	}
+
+	.texto-all h2{
+		font-size: 1.5em;
+
+}
+
+
+	.texto-all h2 a{
+		display: none;
+	}
+}
+
+
+
+
+
+
+/*Extra small devices (portraint phones)*/
+
+@media(min-width: 493px) and (max-width: 575.98px){ 
+
+	#home{
+		align-items: flex-end;
+	} 
+
+	.texto{
+		margin-top: 85px;
+	}
+
+	.imagem-2{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		justify-self: flex-end;
+	}
+
+	.imagem-1{
+		display: none;
+	}
+
+	header, nav .container img{
+		margin-left: 10px;
+
+			}
+
+	.navbar-light .navbar-toggler{
+	margin-right: 15px;
+	}
+
+
+	.figura2{
+		position: relative;
+	
+		
+		
+	}
+
+	#compativel .figura2 img{
+		width: 400px;
+		height: 300px;
+		
+	}
+
+	img, span{
+				
+		font-size: 1.1em;
+		
+	}
+
+	.img-logo{
+		width: 50px;
+		height: 50px;
+	}
+
+	.image-sobre{
+		display: none;
+	}
+
+	.texto-all p{
+		font-size: 1.1em;
+
+}
+
+.texto-all span{
+	font-size: 1.4em;
+
+}
+
+.texto-all h2{
+font-size: 1.7em;
+
+}
+.faq{
+	margin-top: 0px;
+	padding: 0 10px 30px 10px;
+}
+
+.faq h2{
+	font-size: 1.5em;
+	
+}
+
+.texto-all h2 a{
+	display: none;
+
+}
+
+	
+
+}
+
+
+/*Small devices (landscape phones)*/
+
+@media(min-width: 576px) and (max-width: 767.98px){ 
+
+	#home{
+		align-items: flex-end;
+	} 
+
+	.texto{
+		margin-top: 85px;
+	}
+
+	.imagem-2{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		justify-self: flex-end;
+	}
+
+	.imagem-1{
+		display: none;
+	}
+
+	header, nav .container img{
+		margin-left: 10px;
+
+			}
+	
+	.navbar-light .navbar-toggler{
+	margin-right: 15px;
+	}
+
+	.figura2{
+		position: relative;
+	
+		
+		
+	}
+
+	#compativel .figura2 img{
+		width: 400px;
+		height: 300px;
+		
+	}
+	
+	img, span{
+				
+		font-size: 1.3em;
+		
+	}
+	
+	.img-logo{
+		width: 50px;
+		height: 50px;
+	}
+
+	.image-sobre{
+		display: none;
+	}
+
+	.texto-all p{
+		font-size: 1.2em;
+
+}
+
+.texto-all span{
+	font-size: 1.5em;
+
+}
+
+.texto-all h2{
+font-size: 1.8em;
+
+}
+
+.faq{
+	margin-top: 0px;
+	padding: 0 10px 30px 10px;
+}
+
+.faq h2{
+	font-size: 1.3em;
+	
+}
+
+.texto-all a.discord{
+
+	display: none;
+
+}
+
+
+}
+
+
+/*Medium devices (tablets, 768px e superior)*/
+@media(min-width: 768px) and (max-width:  991.98px){ 
+
+#home{
+		align-items: flex-end;
+	} 
+
+	.texto{
+		display: flex;
+		justify-content: center;
+		
+		
+	}
+
+
+	.imagem-1{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-end;
+		margin-left: 120px;
+
+	}
+
+	section.imagem-1 img{
+		width: 900px;
+		height: 500px;
+	}
+
+
+
+	.imagem-2{
+		display: none;
+		
+
+	}
+
+
+	.parallax{
+
+		height: 50vh !important;
+		background-position: bottom 60%;
+	}
+
+	.figura1{
+		right: 150px;
+	}
+
+	.figura2{
+		position: relative;
+	
+		
+		
+	}
+
+	#compativel .figura2 img{
+		width: 400px;
+		height: 300px;
+		
+	}
+
+	#home{
+		height: 600px;
+
+	}
+
+	#enter{
+		margin: 20px 0;
+	}
+
+	.texto-all h2 a{
+	
+		display: none;
+			
+		
+		}
+
+		.faq h2{
+			font-size: 1.4em;
+			
+		}
+
+		
+.texto-all h2{
+	font-size: 2em;
+	
+	}
+	.texto-all h2 a{
+
+		display: none;
+	
+	}
+	
+	
+
+}
+
+/*Large devices (desktops, 992px e superior)*/
+@media(min-width: 992px) and (max-width: 1199.98px){ 
+
+	
+#home{
+		align-items: flex-end;
+		
+	} 
+
+	.texto{
+		
+		margin-right: 60px;
+		
+		justify-content: center;
+		
+
+	}
+
+	.imagem-1{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-end;
+		margin-left: 100px;
+		
+
+	}
+
+
+
+	.imagem-2{
+		display: none;
+		
+
+	}
+
+	.figura2{
+		margin-right: 5px;
+	}
+
+	
+	.menu_hamburguer{
+		display: none;
+	}
+
+	.ps{
+		margin-left: auto;
+	}
+
+	.icon{
+		display: none;
+	}
+
+	
+.texto-all h2 a{
+	display: none;
+
+}
+
+.faq h2{
+	font-size: 1.6em;
+	
+}
+
+.texto-all h2{
+	font-size: 2.2em;
+}
+	
+.text-all, p{
+	font-size: 1.3em;
+}
+
+}
+
+/*Extra large devices (large desktops, 1200px e superior)*/
+@media(min-width: 1200px){ 
+
+
+#home{
+		align-items: flex-end;
+		
+	} 
+
+	.texto{
+		
+		margin-right: 60px;
+		
+		justify-content: center;
+		
+
+	}
+
+	.imagem-1{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-end;
+		margin-left: 100px;
+		
+
+	}
+
+
+
+	.imagem-2{
+		display: none;
+		
+
+	}
+
+
+	#home, main.texto h1{
+		font-size: 5em;
+
+	}
+
+
+	.ps{
+		margin-left: auto;
+	}
+
+	.icon{
+		display: none;
+	}
+
+	.texto-all a.discord{
+	
+		display: none;		
+		
+		}
+
+		
+.faq h2{
+	font-size: 2.2em;
+	
+}
+
+
+.text-all, p{
+	font-size: 1.4em;
+}
+
+	
+
+}
+
+

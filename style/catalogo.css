@@ -1,0 +1,102 @@
+/* CONTEÚDO - CATÁLOGO
+--------------------------------------------------------------------------*/
+
+/*Barra de pesquisa*/
+
+.search-box{
+	position: absolute;
+	z-index: 0;
+	left: 60%;
+	top: 100px;
+	right: 40px;
+	background: #4682B4;
+	height: 50px;
+	padding: 10px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.search-txt{
+	border: none;
+	background: none;
+	outline: none;
+	padding: 0;
+	font-size: 16px;
+	line-height: 40px;
+	width: 6s00px;
+	color: white;
+
+}
+
+::-webkit-input-placeholder{
+	color: white;
+}
+
+.search-btn{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background:#000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.search-box:hover > .search-txt{ 
+	width: 300px;
+	transition: 0.5s;
+	padding: 0 6px;
+}
+
+.search-box:hover > .search-btn{ 
+
+	background: #9bf0e1;
+	transition: 0.5s;
+}
+
+#catalogo{
+	background: #000;
+}
+
+
+.sessao-catalogo{
+	background: #1C1C1C;
+
+	background-attachment: fixed; /*fundo fixo para dar aquele efeito massa e fazer com que o fundo apareça.*/
+
+}
+
+.sessao-catalogo:hover .filme{
+	transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+	transform-style: preserve-3d;
+}
+
+
+.sessao-catalogo:hover .filme:hover{
+	transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+	transform-style: preserve-3d;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.85);
+}
+
+.filme{
+	cursor: pointer;
+	transform: all 0.4s;
+}
+
+.caixa-catalogo{
+	display: flex;
+	
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+}
+
+
+.space{
+	margin: 30px 0;
+}

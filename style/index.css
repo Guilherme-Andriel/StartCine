@@ -330,6 +330,7 @@ footer a:hover{
 @media(max-width: 492.98px){ 
 
 	#home{
+		height: 730px;
 		align-items: flex-end;
 	} 
 
@@ -688,6 +689,7 @@ font-size: 1.8em;
 
 	.coisa-1{
 		margin-right: 35px;
+
 	}
 
 
